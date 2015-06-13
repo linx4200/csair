@@ -60,7 +60,7 @@ def main()
       if offset < 0
         flag = true
         msg = '机票跳水' + (-offset).to_s  + 'RMB啦!!!! 现价: ' + price.to_s + ' 大甩卖!'
-      else
+      elsif offset > 0
         flag = true
         msg = '竟然涨价了!!!!涨了' + offset.to_s + 'RMB这么贵!!!! 现在都要' + price.to_s + ' 那么贵了! 😢'
       end
