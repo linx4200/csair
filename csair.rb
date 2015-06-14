@@ -50,7 +50,7 @@ def main()
 
   while(1)
     res = fetch
-    if res[:err]
+    if (res.nil? || res[:err])
       flag = true
       msg = '拿不回来数据了! 说不定就被封了! 老公自己去看看呀!'
     else
